@@ -291,7 +291,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.create', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -311,7 +311,7 @@ class AVFoundationVideoPlayerApi {
         message: 'Host platform returned null value for non-null return value.',
       );
     } else {
-      return (replyMap['result'] as TextureMessage?)!;
+      return TextureMessage.decode(replyMap['result'] ?? {});
     }
   }
 
@@ -320,7 +320,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.dispose', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -344,7 +344,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setLooping', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -368,7 +368,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setVolume', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -392,7 +392,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setPlaybackSpeed', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -416,7 +416,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.play', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -440,7 +440,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.position', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -460,7 +460,7 @@ class AVFoundationVideoPlayerApi {
         message: 'Host platform returned null value for non-null return value.',
       );
     } else {
-      return (replyMap['result'] as PositionMessage?)!;
+      return PositionMessage.decode(replyMap['result'] ?? {});
     }
   }
 
@@ -469,7 +469,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.seekTo', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -493,7 +493,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.pause', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',
@@ -517,7 +517,7 @@ class AVFoundationVideoPlayerApi {
         'dev.flutter.pigeon.AVFoundationVideoPlayerApi.setMixWithOthers', codec,
         binaryMessenger: _binaryMessenger);
     final Map<Object?, Object?>? replyMap =
-        await channel.send(<Object?>[arg_msg]) as Map<Object?, Object?>?;
+        await channel.send(arg_msg.encode()) as Map<Object?, Object?>?;
     if (replyMap == null) {
       throw PlatformException(
         code: 'channel-error',

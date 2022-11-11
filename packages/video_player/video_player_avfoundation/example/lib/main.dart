@@ -11,12 +11,12 @@ import 'mini_controller.dart';
 void main() {
   runApp(
     MaterialApp(
-      home: _App(),
+      home: App(),
     ),
   );
 }
 
-class _App extends StatelessWidget {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
