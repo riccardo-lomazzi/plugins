@@ -14,6 +14,8 @@ flutter:
     platforms:
       android:
         default_package: video_player_android
+      macos: 
+        default_package: video_player_avfoundation
       ios:
         default_package: video_player_avfoundation
       web:
