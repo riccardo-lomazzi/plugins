@@ -1,3 +1,15 @@
+## NEXT
+
+* Updates minimum Flutter version to 3.0.
+
+## 0.3.4+1
+
+* Updates code for stricter lint checks.
+
+## 0.3.4
+
+* Adds macOS as a supported platform.
+
 ## 0.3.3
 
 * Supports adding discount information to AppStorePurchaseParam. 
